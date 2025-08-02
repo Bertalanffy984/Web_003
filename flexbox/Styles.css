@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padre {
+  border: solid #000;
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(121, 55, 35);
+}
+.contenedor {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+}
+.conCajas {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.conCirculos {
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.caja {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  background: conic-gradient(rgb(200, 1, 100), rgb(46, 7, 107));
+}
+.circulo {
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: radial-gradient(rgb(181, 228, 12), rgb(100, 50, 80));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cajita {
+  height: 30%;
+  width: 30%;
+  background: linear-gradient(to left, rgb(179, 59, 11), rgb(30, 50, 104));
+  border: 1px solid black;
+}
