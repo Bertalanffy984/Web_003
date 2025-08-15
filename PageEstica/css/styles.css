@@ -1,0 +1,509 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.navegacion_desktop{
+    display: none;
+}
+.title_footer{
+    display: none;
+}
+#header_A{
+height: 15vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+background-color: rgba(41, 38, 38, 0.904);
+    div{
+        height: 3em;
+        width: 12em;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        div{
+            height: 80%;
+            width: 100%;
+            background-color: rgb(103, 104, 104);
+        }
+        img{
+        height: 30px;
+        width: 40px;
+        }
+    }
+    img{
+        height: 20px;
+        width: 20px;
+    }
+}
+#content_A{
+height: 95vh;
+background: url('/assets/Fondo_sction_A.jpg') center/cover  fixed;
+}
+#content_news_numbers{
+height: 50vh;
+padding: 30px;
+box-shadow: 0 0 30px black;
+}
+.color_01{
+background-color: rgb(65, 62, 62);
+}
+.color_02{
+background-color: rgb(87, 83, 83);
+}
+.color_03{
+background-color: rgb(95, 94, 94);
+}
+.color_04{
+background-color: rgb(128, 128, 128);
+}
+.title_parrafo{
+width: 80%;
+height: 80%;
+}
+h2{
+padding: 5px;
+color: white;
+}
+p{
+line-height: 1.5;
+padding: 5px;
+color: rgb(18, 18, 19);
+}
+.contain-boton{
+display: flex;
+justify-content: end;
+width: 90%;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+.content_news_letras{
+height: 100vh;
+background-color: rgb(121, 115, 115);
+box-shadow: 0 0 30px black;
+    div{
+        height: 50%;
+        width: 100%;
+        padding: 30px;
+    }
+    img{
+        height: 50%;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+#parrafo_adicional{
+    display: none;
+}
+
+#endSection{
+background-color: rgb(202, 192, 192);
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 2fr 2fr 1fr 0.5fr;
+grid-template-areas: 
+". contain_imagen ."
+". mensajes ."
+". redes ."
+"barra barra barra";
+}
+.contain_img_end{
+grid-area: contain_imagen;
+display: flex;
+justify-content: center;
+align-items: center;
+    img{
+        height: 11em;
+        width: 11em;
+        box-shadow: 0 0 30px #000;
+        border-radius: 5px;
+    }   
+}
+.content_mensa_end{
+grid-area: mensajes;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+h4{
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 30px 0 #6b6969;
+}
+}
+.iconos_redes{
+grid-area: redes;
+display: flex;
+justify-content: space-evenly;
+img{
+    height: 2em;
+    width: 2em; 
+}
+}
+.barraFinal{
+grid-area: barra;
+display: flex;
+justify-content: end;
+align-items: center;
+background-color: #6b6969;
+padding: 1em;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/* TABLETAS AQUI*/
+@media (min-width: 700px) {
+#header_A{
+height: 13vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+background-color: rgba(41, 38, 38, 0.904);
+    div{
+        height: 3em;
+        width: 12em;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        div{
+            height: 80%;
+            width: 100%;
+            background-color: rgb(103, 104, 104);
+        }
+        img{
+        height: 30px;
+        width: 40px;
+        }
+    }
+    img{
+        height: 20px;
+        width: 20px;
+    }
+}
+#content_A{
+height: 60vh;
+background: url('/assets/Fondo_sction_A.jpg') center/cover  fixed;
+}
+#content_news_numbers_Super{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#content_news_numbers{
+height: 50%;
+width: 50%;
+padding: 30px;
+box-shadow: 0 0 30px black;
+p{
+line-height: 1.1em;
+font-size: 1.3em;
+padding: 5px;
+color: rgb(18, 18, 19);
+}
+}
+
+h2{
+padding: 5px;
+color: rgb(255, 255, 255);
+}
+p{
+line-height: 1.5em;
+font-size: 1.6em;
+padding: 5px;
+color: rgb(18, 18, 19);
+}
+
+.content_news_letras{
+height: 75vh;
+display: flex;
+background-color: rgb(121, 115, 115);
+box-shadow: 0 0 30px black;
+
+    div{
+        height: 50%;
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    img{
+        height: 50%;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 46%;
+    }
+}
+.contain_img_end{
+margin-top: 2em;
+grid-area: contain_imagen;
+display: flex;
+justify-content: center;
+align-items: center;
+    img{
+        height: 28em;
+        width: 28em;
+        box-shadow: 0 0 30px #000;
+        border-radius: 5px;
+    }   
+}
+.content_mensa_end{
+grid-area: mensajes;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+h4{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-justify: center;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    box-shadow: 0 3px 30px 0 #6b6969;
+}
+}
+.iconos_redes{
+grid-area: redes;
+display: flex;
+.content_iconos{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    height: 3em;
+    width: 3em; 
+}
+}
+} 
+/* Tabletas grandes y ya escritorio */
+@media (min-width: 1024px){
+#imgBarra_footer{
+display: none;
+}
+.title_footer{
+    display: inline-block;
+}
+#header_A{
+height: 12vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+background-color: rgba(41, 38, 38, 0.904);
+    div{
+        height: 3em;
+        width: 12em;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        div{
+            height: 80%;
+            width: 100%;
+            background-color: rgb(103, 104, 104);
+        }
+        img{
+        height: 30px;
+        width: 40px;
+        }
+    }
+/* estilo de barra */
+.navegacion_desktop{
+    display: inline-block;
+    width: 70vw;
+    height: 1.5em;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        
+        li{
+            background-color: #6b6969;
+            height: 1.5em;
+            width:15%
+            
+    }
+}
+}
+}
+#content_A{
+height: 82vh;
+background: url('/assets/Fondo_sction_A.jpg') center/cover  fixed;
+}
+#content_news_numbers_Super{
+height: 50vh;
+border: solid black;
+
+}
+#content_news_numbers{
+height: 100%;
+width: 25%;
+padding: 30px;
+box-shadow: 0 0 30px black;
+
+}
+.color_01{
+background-color: rgb(65, 62, 62);
+}
+.color_02{
+background-color: rgb(87, 83, 83);
+}
+.color_03{
+background-color: rgb(95, 94, 94);
+}
+.color_04{
+background-color: rgb(128, 128, 128);
+}
+.title_parrafo{
+width: 80%;
+height: 80%;
+}
+h2{
+padding: 5px;
+color: white;
+}
+p{
+font-size: 0.1em;
+line-height: 1.5em;
+padding: 5px;
+color: rgb(18, 18, 19);
+}
+.contain-boton{
+display: flex;
+justify-content: end;
+width: 90%;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+/* AQUIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+.content_news_letras{
+height: 85vh;
+background-color: rgb(121, 115, 115);
+box-shadow: 0 0 30px black;
+display: grid;
+grid-template-columns: 0.3fr 2fr 0.6fr 1fr;
+grid-template-rows: 1fr 2fr 1fr;
+grid-template-areas: 
+". titulo_parrafo . ."
+". titulo_parrafo . imagen"
+". . . .";
+div{
+    margin-top: 15%;
+    grid-area:titulo_parrafo;
+    h2{
+        text-align: start;
+        width: 100%;
+        padding: 0 0 50px 0;
+    }
+    p{
+        line-height: 1.5em;
+        font-size: 2em;
+        padding: 5px;
+        color: rgb(18, 18, 19);
+        padding: 0 0 20px 0;
+    }
+button{
+    border-radius: 10px;
+    position: relative;
+    left: -12em;
+}
+}
+img{
+    grid-area: imagen;
+    margin-left: -1em;
+    margin-top: 5em;
+    height: 80%;
+    width: 80%;
+}
+}
+
+#endSection{
+background-color: rgb(141, 140, 140);
+height: 100vh;
+display: grid;
+grid-template-columns: 0.5fr 2.5fr 2fr 2fr 2fr 0.5fr ;
+grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr 1fr;
+grid-template-areas: 
+". . . . . ."
+". content_title_footer . . . ."
+". contain_imagen mensajes . redes . "
+". . . . . ."
+"barra barra barra barra barra barra";
+
+}
+.content_title_footer{
+    grid-area: content_title_footer;
+}
+.contain_img_end{
+grid-area: contain_imagen;
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid black;
+    img{
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 30px #000;
+        border-radius: 5px;
+    }   
+}
+.content_mensa_end{
+grid-area: mensajes;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+margin-left: 20px;
+h4{
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 30px 0 #6b6969;
+}
+}
+.iconos_redes{
+grid-area: redes;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+.content_iconos{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    height: 2em;
+    width: 2em; 
+}
+}
+.barraFinal{
+grid-area: barra;
+display: flex;
+justify-content: end;
+align-items: center;
+background-color: #6b6969;
+padding: 1em;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+}
